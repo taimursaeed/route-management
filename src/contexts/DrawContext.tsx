@@ -14,6 +14,7 @@ const initialState: IInitialState = {
 
 const DrawContext = createContext<{
   state: IInitialState;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   dispatch: React.Dispatch<any>;
 }>({
   state: initialState,

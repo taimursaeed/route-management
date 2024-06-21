@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SVG, Svg } from "@svgdotjs/svg.js";
 import { DrawActions } from "../reducers/actionTypes";
 import { IInitialState, Modes, Line } from "../types/types";
@@ -40,8 +41,8 @@ export const calculateLineLength = (
 // Render canvas grid
 const renderGrid = (canvas: Svg) => {
   const GRID_SIZE = 10;
-  const canvasWidth: number = canvas.width();
-  const canvasHeight: number = canvas.height();
+  const canvasWidth: any = canvas.width();
+  const canvasHeight: any = canvas.height();
 
   // Background
   canvas.rect(canvasWidth, canvasHeight).fill("#fafafa");

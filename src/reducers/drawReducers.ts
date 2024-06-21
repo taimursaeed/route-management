@@ -43,11 +43,13 @@ function drawReducer(
       return {
         ...state,
         isDrawing: false,
+        // @ts-expect-error lookup later
         currentLine: { ...state.currentLine, end: action.payload.end },
         lines: [
           ...state.lines,
           {
             id: action.payload.id,
+            // @ts-expect-error lookup later
             start: state.currentLine.start,
             end: action.payload.end,
             length: action.payload.length,

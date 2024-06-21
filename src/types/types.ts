@@ -13,7 +13,7 @@ type Plot = {
 type Line = {
   id: number;
   start: Plot;
-  end: Plot;
+  end?: Plot;
   length?: number;
   angle?: number;
 };
