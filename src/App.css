@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  user-select: none;
+}
+/* .highlight {
+  stroke-width: 4px;
+  stroke: blue;
+} */
+#canvas {
+  cursor: pointer;
+}
+.line-data {
+  position: fixed;
+  bottom: 0;
+  background: white;
+  box-shadow: 0 0 10px black;
+  width: 100%;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.line-data li {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.line-data li:first-of-type {
+  background: #dfdfdf;
+}
+.line-data li:last-of-type {
+  margin-bottom: 0;
+}
