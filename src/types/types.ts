@@ -28,6 +28,7 @@ type Circle = {
 };
 
 interface IInitialState {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   canvas: any;
   isDrawing: boolean;
   drawMode: Modes;

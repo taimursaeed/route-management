@@ -15,6 +15,8 @@ const LineComponent: React.FC<Line> = ({ id, start, end }) => {
   }, [state.selectedLine]);
 
   useEffect(() => {
+    if (!end) return;
+
     let line: SvgLine;
     if (state.canvas) {
       line = state.canvas
